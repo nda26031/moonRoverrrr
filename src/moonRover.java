@@ -26,8 +26,11 @@ public class moonRover {
     private void forW() {
         switch (heading) {
             case "N":
-                y++;
+                if (y<5){
+                    y++;
+                }
                 break;
+
             case "W":
                 x--;
                 break;
@@ -35,8 +38,9 @@ public class moonRover {
                 y--;
                 break;
             case "E":
-                x++;
-                break;
+                if (x<5){
+                    x++;
+                }break;
         }
     }
 
